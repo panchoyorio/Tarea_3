@@ -1,7 +1,6 @@
 #Ejercicio 1
-listaDeNumeros[5]
 listaDeNumeros <- list(2,5,6,2,1,5,6,10,11,20,15)
-listaDeNumeros[21]
+listaDeNumeros[4]
 #pego lista guia
 #pruebo con el 0 
 #pruebo con negativo(primero una posicion dentro de n, luego una más grande)
@@ -35,3 +34,54 @@ length(listaDeNumeros)
 for(i in listaDeNumeros){
   print(paste("cuento ",i," misisipis"))
 }
+
+#Ejercicio 8
+for(i in listaDeNumeros){
+  print(i)
+  if(i%%2==0) {print("par")} else{print("impar")}
+}
+
+#Ejercicio 9
+Total<-100
+VotosSi<-40
+VotosNo<-30
+if(VotosSi>VotosNo) {print("Gana Si")} else{print("Gana No")}
+#para valores dados esta función smplemente dirá que opción tiene màs votos, no tiene restriciones
+
+#Ejericio 10
+Suma<-function(a,b){ 
+  a+b
+}
+Suma(3,4)
+Multiplica<-function(a,b){
+  a*b
+}
+Multiplica(2,6)
+Resta<-function(a,b){
+  a-b
+}
+Resta(6,2)
+Divide<-function(a,b){
+  a/b
+}
+Divide(10,5)
+
+#Ejercicio 11…“
+#Area_rectangulo: double -> double
+#Area_rectangulo: Se calcula la diferencia entre las areas de el rectangulo grande y el pequeño para obtener la zona achurada, aquí b1 y h1 corresponden a la base y la altura del rectángulo exterior
+Area_rectangulo<-function(b1,h1,b2,h2){
+  b1*h1-b2*h2
+}
+Area_rectangulo(5,7,2,3)
+
+#Area_circulo: double -> double
+#Area_circulo: Se calcula la diferencia entre las areas del circulo exterior y el del interior, aquí r1 y r2 corresponden a los radios de los circulos
+Area_circulo<-function(r1,r2){
+ abs((pi*r1^2)-(pi*r2^2))
+}
+
+Area_circulo(6,4)
+
+
+
+

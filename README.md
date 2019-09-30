@@ -21,3 +21,18 @@ Utilizando Valor inicial<-5 y valor final <-20 5:20 se genera una secuencia de 1
 La condicion establecida por el for es que en una secuencia del 1 al 100 se escriba la palabra cuento antes del número y misisipis después del número.
 
 **Ejercicio 7**
+Para adaptar los elementos de la lista smplemente modifiqué el comando reemplazando 1:100 por "listaDeNumeros" en la parte que se especificaba la secuencia, de tal forma; for(i in **listaDeNumeros**){ print(paste("cuento ",i," misisipis"))}
+
+**Ejercicio 8**
+Para modificar el código alteré la condición if integrada en el for para que generara el resultado "par" si es que el numero lo era, o "impar" para otro caso, de la siguente manera: for(i in listaDeNumeros) {print(i) if(i%%2==0) {print("par")} else{print("impar")}, la parte complicada era descubrir como hacer que R reconociera a los divisibles por 2 en la parte if(i%%2==0)
+
+**Eercicio 9**
+
+No pude integrar las condiiciones en un for loop con if (intentar denuevo)
+
+**Ejercicio 10**
+Al crear la función Suma<-function(a,b) {a+b}, se puede usar el comando Suma para sumar enteros colocandolos en las posiciones a y b, así mismo se pueden crear otras funciones matemáticas, pude crear con éxito una funcion de multiplicar, restar y dividir.
+
+**Ejercicio 11**
+Cada figura está compuesta por 2 figuras, la zona achurada es la resta entre la figura más grande y la más pequeña que va en su interior para esto utilicé funciones en las que integré el calculo de las areas de la figura grande y la pequeña (exterior de la figura y el interior) en el caso del rectangulo utilcé la función Area-rectangulo<-function(b1,h1,b2,h2) {b1*h1-b2*h2} donde b1 y h1 son la base y la altura del rectángulo exterior y b2 y h2 la base y altura del rectángulo del interior; Por otro lado en el caso del círculo utilicé la función Area-circulo<-function(r1,r2) {abs((pi*r1^2)-(pi*r2^2))} donde r1 y r2 son los radios del circulo exterior e interior respectivamente.
+
