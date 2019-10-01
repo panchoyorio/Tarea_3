@@ -42,11 +42,23 @@ for(i in listaDeNumeros){
 }
 
 #Ejercicio 9
-Total<-100
-VotosSi<-40
-VotosNo<-30
-if(VotosSi>VotosNo) {print("Gana Si")} else{print("Gana No")}
-#para valores dados esta función smplemente dirá que opción tiene màs votos, no tiene restriciones
+#Ejercicio 9
+funcionelectoral<-function(total,VotosSi,VotosNo){
+  if((VotosSi+VotosNo)>=(total*0.5+1)&&(VotosSi>VotosNo)){
+    print("Gana el Si")
+  }else if((VotosSi+VotosNo)>=(total*0.5+1)&&(VotosNo>VotosSi)){
+    print("Gana el No")
+  }else if((VotosSi+VotosNo)>=(total*0.5+1)&&(VotosNo=VotosSi)){
+    print("Gana el Si")
+  }else if((VotosSi+VotosNo)<(total*0.5+1)&&(VotosSi>=(total*0.3))){
+    print("Gana el Si")
+  }else if ((VotosSi+VotosNo)<(total*0.5+1)&&(VotosNo>(total*0.3))){
+    print("Gana el No")
+  }else{
+    print("Gana el No")}
+}
+
+funcionelectoral(100,30,30)
 
 #Ejericio 10
 Suma<-function(a,b){ 
